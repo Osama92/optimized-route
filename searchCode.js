@@ -16,7 +16,7 @@ var end;           // end place
 var waypoint = []; // array for holding places objects of each travel stopping point (between start and stop)
 
 // https://developers.google.com/maps/documentation/javascript/directions#waypoint-limits
-var MAX_WAYPOINTS = 25; // max number of waypoints allowed by API (25 max as of Jan 27, 2020)
+var MAX_WAYPOINTS = 25; // max number of waypoints allowed by API 
 
 document.getElementById("loc2").placeholder = "Enter up to " + MAX_WAYPOINTS + " waypoints";
 
@@ -122,8 +122,8 @@ function calcRoute(routeStart) {
         origin: start.geometry.location, //latlng object
         destination: end.geometry.location,
         waypoints: actualWaypoints,
-        optimizeWaypoints: true, ///VERY IMPORTANT!!! WOW example: tinyurl.com/gmproj6
-        travelMode: google.maps.TravelMode.DRIVING
+        optimizeWaypoints: true, ///VERY IMPORTANT!!!
+        travelMode: google.maps.TravelMode.DRIVING // Delivery Mode
     }
     
     directionsService.route(request, function(result, status) {
