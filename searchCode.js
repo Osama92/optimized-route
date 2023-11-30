@@ -130,7 +130,8 @@ function calcRoute(routeStart) {
     origin: start.geometry.location, //latlng object
     destination: end.geometry.location,
     waypoints: actualWaypoints,
-    optimizeWaypoints: true, ///VERY IMPORTANT!!!
+    // optimizeWaypoints: true, ///VERY IMPORTANT!!!
+    optimizeWaypointOrder: true,
     travelMode: google.maps.TravelMode.DRIVING, // Delivery Mode
   };
 
