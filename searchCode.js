@@ -132,7 +132,6 @@ function calcRoute(routeStart) {
     waypoints: actualWaypoints,
     // optimizeWaypoints: true, ///VERY IMPORTANT!!!
     optimizeWaypointOrder: true,
-    routingPreference: google.maps.routingPreference.TRAFFIC_AWARE,
     travelMode: google.maps.TravelMode.DRIVING, // Delivery Mode
   };
 
